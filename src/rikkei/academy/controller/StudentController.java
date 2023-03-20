@@ -14,4 +14,16 @@ public class StudentController {
     public void createStudent(Students students){
         studentService.save(students);
     }
+public List<Students> sortByName(){
+     return    studentService.sortByName();
+}
+public void delete(int idDel){
+        studentService.deleteById(idDel);
+}
+public void update(Students StudentUp){
+        studentService.save(StudentUp);
+}
+public Students detail(int id){
+      return   studentService.findById(id);
+}
 }

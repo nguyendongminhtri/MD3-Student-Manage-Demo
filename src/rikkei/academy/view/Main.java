@@ -21,7 +21,18 @@ public class Main {
             case 2:
                 new StudentView().createNewStudent();
                 break;
+            case 3:
+                new StudentView().sort();
+                break;
+            case 4:
+                new StudentView().delete();
+            case 5:
+                new StudentView().update();
+            case 6:
+                new StudentView().detail();
         }
+
+
     }
     public static void main(String[] args) {
         new Main();

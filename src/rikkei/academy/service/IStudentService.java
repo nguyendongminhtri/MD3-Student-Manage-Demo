@@ -9,4 +9,5 @@ public interface IStudentService {
     void save(Students students);
     Students findById(int id);
     void deleteById(int id);
+    List<Students> sortByName();
 }
